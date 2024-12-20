@@ -374,48 +374,112 @@
 }
 
 .why-container {
-    margin-top: 100px;
-    display: flex;
-    gap: 100px;
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
 }
 
 .why-lists {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .why-reasons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .inside-why {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .last-why {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .correct-img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .why-p {
-    font-weight: 300;
-    font-size: 14px;
-    color: #242424;
+  font-weight: 300;
+  font-size: 14px;
+  color: #242424;
 }
 
 .why-h3 {
-    color: #2dcf57;
+  color: #2dcf57;
+}
+
+.request-section {
+  display: flex;
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 90px;
+  border-radius: 30px;
+}
+
+.request-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.request-left h1 {
+    font-size: 32px;
+    width: 300px;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+}
+
+.doc-request {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.doc-request p {
+  width: 200px;
+}
+
+.request-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.input {
+  padding: 15px;
+  padding-right: 200px;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #2dcf57;
+  padding: 8px 13px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* Responsive styles */
@@ -517,8 +581,14 @@
     width: 100px;
   }
 
+  .why-container {
+    display: block;
+  }
+
   .meeting-img {
-    display: none;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
   }
 
   .why-h1 {
