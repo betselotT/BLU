@@ -353,6 +353,71 @@
   margin-top: 30px;
 }
 
+.why-part {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.why-h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.why-p1 {
+  font-weight: 300;
+  width: 60%;
+  text-align: center;
+}
+
+.why-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.why-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why-reasons {
+    display: flex;
+    gap: 15px;
+}
+
+.inside-why {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.last-why {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.correct-img {
+    width: 20px;
+    height: 20px;
+}
+
+.why-p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #242424;
+}
+
+.why-h3 {
+    color: #2dcf57;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .container {
@@ -439,9 +504,9 @@
   }
 
   .arrow {
-    padding: 8px;
+    padding: 5px;
     font-size: 10px;
-    margin: 10px;
+    margin: 5px;
   }
 
   .clients-card {
@@ -450,5 +515,19 @@
 
   #name {
     width: 100px;
+  }
+
+  .meeting-img {
+    display: none;
+  }
+
+  .why-h1 {
+    text-align: center;
+  }
+
+  .why-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
