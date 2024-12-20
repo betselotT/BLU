@@ -149,26 +149,83 @@
 }
 
 .section2-blacks {
-    background-color: #242424;
-    color: white;
-    padding: 30px 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-  }
+  background-color: #242424;
+  color: white;
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
 
 .section2-h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .section2-p {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.services {
+  margin-top: 100px;
+}
+
+.services-part {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.services-h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services-p1 {
+  font-weight: 300;
+  width: 60%;
+  text-align: center;
+}
+
+.services-container {
+  margin-top: 80px;
+  display: flex;
+  gap: 70px;
+}
+
+.service-card {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 40px;
+  border-top: 2px solid #dcdcdc;
+  border-left: 2px solid #dcdcdc;
+  border-bottom: 2px solid #555555;
+  border-right: 2px solid #555555;
+}
+
+.service-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #2dcf57;
+}
+
+.service-desc {
+  font-weight: 200;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .container {
+    padding-bottom: 40px;
+  }
   .navbar-lists,
   .navbar-btns {
     display: none;
@@ -213,7 +270,7 @@
 
   .hero-h1 {
     font-size: 25px;
-    width: 80%;
+    width: 90%;
   }
 
   .other-sections {
@@ -224,5 +281,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .services-p1 {
+    font-weight: 300;
+    width: 95%;
+    text-align: center;
+  }
+
+  .services-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .service-card {
+    width: 300px;
   }
 }
