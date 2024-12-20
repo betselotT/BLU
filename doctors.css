@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.blu {
+  text-decoration: none;
+  color: #2dcf57;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.navbar-lists {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-lists a {
+  text-decoration: none;
+  color: rgb(61, 54, 54);
+  font-weight: 600;
+}
+
+.navbar-btns {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn {
+  color: rgb(61, 54, 54);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background-color: #2dcf57;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(61, 54, 54);
+  border-radius: 2px;
+}
+
+.other-sections {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.team-h1 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #2dcf57;
+}
+
+.team-p {
+  font-weight: 300;
+}
+
+.team-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 25px;
+}
+
+.team-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.team-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 295px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.team-name {
+  color: #2dcf57;
+}
+
+.team-job {
+  font-weight: 500;
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.team-desc {
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.fab {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  color: #242424;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 40px;
+  }
+  .navbar-lists,
+  .navbar-btns {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .navbar-lists a,
+  .navbar-btns button {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .navbar-lists.active,
+  .navbar-btns.active {
+    display: flex;
+  }
+
+  .other-sections {
+    margin-left: 30px;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
